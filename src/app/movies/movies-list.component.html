@@ -1,0 +1,42 @@
+
+
+
+
+<div id='header' class="jumbotron text-center" style="margin-bottom:0">
+    <h1>The Movies List</h1>
+</div>
+
+
+
+<div class="card" style="width:119rem;">
+    <div class="row">
+        <div class="col-md-6" *ngFor="let movie of movies">
+            <tr>
+           
+                <th><img [src]="movie.img"
+                [style.width.px]="newimageWidth" 
+                [style.margin.px]="imageMargin"
+                [style.height.px]="imagHeigh" ></th>
+                <th><pre></pre></th>
+                 <th  id='textlocation' class="card-text">{{movie.description}}</th>
+                
+           
+            </tr>
+            <div class="card-body">
+                <td class="card-title">{{movie.name}}</td><br>
+                <td class="card-text">{{movie.actor}}</td><br>
+                <td class="card-text">{{movie.rating}}</td><br>
+                <td class="card-text">{{movie.category}}</td><br>
+                <td class="card-text">{{movie.actor}}</td><br>
+                <td><img [src]="movie.award" [style.width.px]="imageWidth" 
+                                            [style.margin.px]="imageMargin"></td>
+                                           
+            </div>
+        </div>
+    </div>
+
+
+    
+    <div id='footer'class="jumbotron text-center" style="margin-bottom:0">
+        <p><b>©Movies list company, a project of Angular Course, 2020</b></p>
+    </div>

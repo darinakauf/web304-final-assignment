@@ -1,0 +1,65 @@
+
+
+<ng-container *ngIf="show">
+    <div style="margin: 0 auto;text-align: left;">
+        <div>
+            <app-movies></app-movies>
+        </div>
+    </div>
+</ng-container>
+
+
+<div id='header' class="jumbotron text-center" style="margin-bottom:0">
+    <h1>Welcom to Movies List</h1>
+  <img src = "assets/images/3d-glasses.png">
+</div>
+
+<div id="instyle" >
+
+  
+    <div  class="input1">
+       
+    <div class="input" >
+        <img src = "assets/images/popcorn.png">
+        <label><b>Username</b> </label><br>
+        <input type="user" name="user" [(ngModel)]="user">
+    </div>
+    <br>
+   
+    <div class="input">
+        <img src = "assets/images/drink.png">
+        <label><b>Password</b> </label><br>
+        <input type="password" name="password" [(ngModel)]="password">
+    </div>
+
+    <br>
+    <button (click)="LogInUser()" id="bt" class="btn btn-primary">{{buttonName}}</button>
+</div>
+</div>
+
+
+<!--<form>
+    <h1>Login</h1>
+    <div class="input">
+        <label>Username: </label>
+        <input type="user" name="user" [(ngModel)] = "user" >
+    </div>
+
+    <div class="input">
+        <label>Password: </label>
+        <input type="password" name="password" [(ngModel)] = "password">
+    </div>
+
+    <button (click)="LogInUser()">Login</button>
+    <ng-container *ngIf="show">
+        <div style="margin: 0 auto;text-align: left;">
+            
+            <div>
+               <app-movies></app-movies>
+            </div>
+        </div>
+    
+    </ng-container>
+    
+</form>
+-->
